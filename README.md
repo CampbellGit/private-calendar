@@ -1,3 +1,4 @@
-# React Big Calendar
+# Private calendar
 
-A plain ole' react-big-calendar.
+Shared calendar with private database.
+Based on react-big-calendar template.
