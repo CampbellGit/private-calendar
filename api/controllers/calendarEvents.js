@@ -1,8 +1,9 @@
+const Model = require("../models/index");
 const { CalendarEvent } = Model;
 
-const eventController = {
+const calendarEventController = {
   all(req, res) {
-    CalendarEvent.find({}).exec((err, events) => res.json(events));
+    CalendarEvent.find({}).exec((err, calendarEvents) => res.json(events));
   },
   create(req, res) {
     var requestBody = req.body;
@@ -14,7 +15,7 @@ const eventController = {
       id: requestBody.id,
     });
     newEvent.save();
-  },
+  }
 };
 
-module.exports = claendarEventController;
+module.exports = calendarEventController;

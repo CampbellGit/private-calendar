@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+
 const Schema = mongoose.Schema,
   model = mongoose.model.bind(mongoose),
   ObjectId = mongoose.Schema.Types.ObjectId;
@@ -11,3 +14,5 @@ const eventSchema = new Schema({
 });
 
 const CalendarEvent = model("CalendarEvent", eventSchema);
+
+module.exports = CalendarEvent;
